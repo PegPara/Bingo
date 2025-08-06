@@ -76,5 +76,5 @@ def x(event=None):
     for i in range(len(cells)):
         if i==12:
             continue
-        cells[i].innerText=Bingo[final_keys[data_index]]
+        cells[i].innerText=final_keys[data_index]
         data_index +=1
