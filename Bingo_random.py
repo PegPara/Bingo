@@ -55,11 +55,21 @@ Bingo={
     49:"Alastor's death flashback",
     50:"Sir Pentious's death flashback",
     51:"Show of Valentino's drawings",
-    52:"Valentino gets reverge of Angel (because of club accident)"
+    52:"Valentino gets reverge of Angel (because of club accident)",
+    53:"Alastor saves Angel from Valentino",
+    54:"Alastor reveals his true motives"
     }
 
 def x(event=None):
-    random_key=random.sample(list(Bingo.keys()),24)
+    must_in=[53,54]
+    all_keys=list(Bingo.keys())
+
+    available_keys=[key for key in all_keys if key not in must_in]
+    random_keys=random.sample(available_keys,22)
+
+    final_keys=must_in + random_keys
+    random.shuffle(final_keys)
+    
     cells=document.querySelectorAll("td")
     data_index=0
     for i in range(len(cells)):
@@ -69,4 +79,3 @@ def x(event=None):
         data_index +=1
 
         
-
