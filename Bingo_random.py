@@ -72,11 +72,9 @@ def x(event=None):
     
     cells=document.querySelectorAll("td")
     data_index=0
+    
     for i in range(len(cells)):
         if i==12:
             continue
-        cells[i].innerText=random_keys[data_index]
+        cells[i].innerText=Bingo[final_keys[data_index]]
         data_index +=1
-
-        
-
