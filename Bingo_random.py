@@ -63,9 +63,10 @@ def x(event=None):
     cells=document.querySelectorAll("td")
     data_index=0
     for i in range(len(cells)):
-        if i==12 or i==3:
+        if i==12 or i==2:
             continue
         cells[i].innerText=random_key[data_index]
         data_index +=1
+
 
 
