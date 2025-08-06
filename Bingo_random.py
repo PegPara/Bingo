@@ -53,7 +53,9 @@ Bingo={
     47:"Frederick Dev speaks(skull Overlord)",
     48:"Cannibals took care of Adam's body",
     49:"Alastor's death flashback",
-    50:"Sir Pentious's death flashback"
+    50:"Sir Pentious's death flashback",
+    51:"Show of Valentino's drawings",
+    52:"Valentino gets reverge of Angel (because of club accident)"
     }
 
 def x(event=None):
@@ -66,9 +68,3 @@ def x(event=None):
         cells[i].innerText=random_key[data_index]
         data_index +=1
 
-        
-        
-   
-
-
-    
