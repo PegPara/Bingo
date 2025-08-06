@@ -21,11 +21,11 @@ Bingo={
     15:"Niffty tries to stab Baxter at least one time",
     16:"Niffty sings about how much she likes bad boys",
     17:"Cherri joins in the hotel  because of Sir Pentious",
-    18:"We get a sense of an 'AFTER THE BATTLE' card, with Vox and Valentino",
+   # 18:"We get a sense of an 'AFTER THE BATTLE' card, with Vox and Valentino",
     19:"Vox gets his screen broken",
     20:"Vox's hand gets cut off",
     21:"Something will crash Vox",
-    22:"Clarification between Vox's and Valentino's relationship",
+    #22:"Clarification between Vox's and Valentino's relationship",
     23:"VEES has their song (all three sing together)",
     24:"Mini flashback of Vox's and Alastor's 'relationship'",
     25:"Vox's old design on screen (old CRT TV screen)",
@@ -54,8 +54,8 @@ Bingo={
     48:"Cannibals took care of Adam's body",
     49:"Alastor's death flashback",
     50:"Sir Pentious's death flashback",
-    51:"Show of Valentino's drawings",
-    52:"Valentino gets reverge of Angel (because of club accident)"
+    #51:"Show of Valentino's drawings",
+   #52:"Valentino gets reverge of Angel (because of club accident)"
     }
 
 def x(event=None):
@@ -63,8 +63,9 @@ def x(event=None):
     cells=document.querySelectorAll("td")
     data_index=0
     for i in range(len(cells)):
-        if i==12:
+        if i==12 or i==3:
             continue
         cells[i].innerText=random_key[data_index]
         data_index +=1
+
 
